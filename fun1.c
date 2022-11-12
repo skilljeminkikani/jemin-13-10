@@ -14,3 +14,4 @@ int mul()
        int x = mul();
         printf("multipal both a and b :- %d",x);
     }
+    
