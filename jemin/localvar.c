@@ -3,7 +3,7 @@
 //float per;
 
 void dis(int m,int s,int e,int total,float per)
-{
+{ 
     printf("maths\tscience\tenglish\ttotal\tper");
     printf("\n%d\t%d\t%d\t%d\t%.2f",m,s,e,total,per);
 }
