@@ -3,15 +3,14 @@
 int mul()
 {
     int a,b;
-    printf("Enter a :-");
+    printf("enter a :- ");
     scanf("%d",&a);
-    printf("Enter b :-");
+    printf("enter b :- ");
     scanf("%d",&b);
     return a*b;
 }
     void main()
     {
-       int x = mul();
-        printf("multipal both a and b :- %d",x);
+        int x = mul();
+        printf("multipal both of a and b :- %d",x);
     }
-    

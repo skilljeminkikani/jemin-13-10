@@ -1,39 +1,41 @@
 #include<stdio.h>
-int main()
+void main()
 {
-	int a[5][5],b[5][5],i,j,x,y;
-	for(i=0; i<3; i++)
-    	{
-		for(j=0; j<3; j++)
-    		{
-		printf("a[%d][%d] :",i,j);
-		scanf("%d",&a[i][j]);
+	-
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("Enter a[%d][%d]: ",i,j);
+			scanf("%d",&a[i][j]);
+		} 
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("Enter b[%d][%d]: ",i,j);
+		 	scanf("%d",&b[i][j]);
 		}
 	}
-	for(x=0; x<3; x++)
+	printf("\n");
+	printf("A\tB\tSum\n******************************\n");
+	for(i=0;i<3;i++)
 	{
-		for(y=0; y<3; y++)
-   		{
-		printf("b[%d][%d] :",x,y);
-		scanf("%d",&b[x][y]);
+		for(j=0;j<3;j++)
+		{
+			printf("%d ",a[i][j]);
 		}
+		printf("\t");
+		for(j=0;j<3;j++)
+		{
+			printf("%d ",b[i][j]);
+		}
+		printf("\t");
+		for(j=0;j<3;j++)
+		{
+			sum=a[i][j]+b[i][j];
+			printf("%d ",sum);
+		}
+		printf("\n");
 	}
-
-	for(i=0; i<3; i++)
-	{
-		for(j=0; j<3; j++)
-    		{
-		printf("%d \t ",a[i][j]);
-       		 }
-		printf("\n");
-       	 }
-
-	for(x=0; x<3; x++)
-    	{
-		for(y=0; y<3; y++)
-    		{
-		printf("%d \t ",b[x][y]);
-        		}
-		printf("\n");
-        	}
- }
+}
